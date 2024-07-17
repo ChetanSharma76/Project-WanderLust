@@ -1,0 +1,159 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} 
+
+.container{
+    flex: 1;
+}
+
+.navbar{
+    height: 5rems;
+    background-color: white;
+}
+
+.fa-compass{
+    color:#fe424d;
+    font-size: 2rem;
+}
+
+.navb a{
+    color: white !important;
+}
+
+/* footer */
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+.f-info-links , .f-info-socials , .f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.f-info-socials i{
+
+    font-size: 1.2rem;
+    margin-right: 1rem;
+
+}
+
+
+.f-info{
+
+    padding-top: 0.75rem;
+    text-align: center;
+    height: 6rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+
+}
+
+
+/* Cards */
+
+.card{
+    border: none !important;
+    margin-bottom: 1 rem;
+    padding: 1rem;
+    
+}
+
+.card-img-top{
+
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding-bottom: 0rem !important;
+}
+
+.card-text p{
+    font-weight: 400 !important;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+/* Card Overlay Effect*/
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* Style for show page */
+
+.show-img{
+    height: 30vh;
+}
+
+.rvd{
+    border: 1px solid black;
+    border-radius: 0.75rem;
+}
+
+/* styling for home page icons */
+
+.filters{
+
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.filter{
+    margin-top: 2rem;
+    text-align: center;
+    margin-right: 2rem;
+    opacity: 0.7;
+}
+.filter:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.filter p{
+    font-size: 0.8rem;
+}
+
+/* navbar styling */
+.navbar{
+
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrCKVj1-g3zHrU5AeECjoDetg4Hmocpqa2BQ&s');
+}
+
+.searchbtn{
+    background-color: #fe424d;
+    border-radius: 25px;
+    padding: 0 1rem 0 1rem;
+}
+
+.searchbtn i{
+    display: inline;
+}
+
+.searchinp{
+    border-radius: 30px !important;
+    padding: 0.5rem 2rem 0.5rem 2rem !important;
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+<% layout('/layouts/boilerplate')%>
+<style>
+    body {
+      background-image: url('');
+      background-size: cover;
+    }
+</style>
+<div class="cdiv signup">
+<div class="row mt-3">
+    <div class="col-6 offset-3">
+        <h2 class="col-6 offset-4">Sign Up</h2>
+        <form action="/signup" method="post" class="needs-validation" novalidate>
+
+            <div class="mb-3">
+    
+                <label for="username" class="form-label">Username: </label>
+                <input type="text" name="username" id='username' placeholder="Enter Username" class="form-control" required/>
+    
+                <div class="valid-feedback">looks good</div>
+                <div class="invalid-feedback">invalid username</div>
+    
+            </div>
+
+            <div class="mb-3">
+    
+                <label for="email" class="form-label">Email: </label>
+                <input type="text" name="email" id='email' placeholder="Enter Email" class="form-control" required/>
+    
+                <div class="valid-feedback">looks good</div>
+                <div class="invalid-feedback">incorrect Email</div>
+    
+            </div>
+
+            <div class="mb-3">
+    
+                <label for="password" class="form-label">Password: </label>
+                <input type="password" name="password" id='password' placeholder="Enter Password" class="form-control" required/>
+    
+                <div class="valid-feedback">looks good</div>
+                <div class="invalid-feedback">incorrect password</div>
+    
+            </div>
+
+            <button type='submit' class="btn btn-outline-success" style="margin-left: 10rem;">Sign Up</button>
+            <br><br>
+        </form>
+    </div>
+</div>
+</div>
