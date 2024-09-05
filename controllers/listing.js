@@ -3,7 +3,7 @@ const Listing=require('../models/listing');
 module.exports.index=
     async (req,res)=>{
         const allListings=await Listing.find({});
-        res.render('listings/index.ejs',{allListings});
+        res.render('listings/index.ejs',{allListings});  //rendering --> giving all listings to the index.ejs and index.ejs is displaying the listings.
         
     };
 
@@ -17,8 +17,8 @@ module.exports.createnewlisting=
 
         // let{title,description,image,price,country,location}=req.body;
     
-        const newListing= new Listing(req.body.listing);
-        newListing.owner=req.user._id;
+        const newListing= new Listing(req.body.listing);   //newListing object that has been created from the information entered by the user in the new.ejs template for taking the info of the new listing.
+        newListing.owner=req.user._id;                    //after that we assign the newListing owner property to the currently logged in user.
         await newListing.save();
     
         req.flash("success",'new listing added!');
