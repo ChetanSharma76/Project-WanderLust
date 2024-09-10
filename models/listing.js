@@ -41,10 +41,10 @@ listingSchema.post('findOneAndDelete',async(listing)=>{
 
     if(listing){
         await Review.deleteMany({
-            _id:{$in:listing.reviews}
+            _id:{$in:listing.reviews}           //refers to those reviews which are present in the array of review ids
         });
     }
 });
 
 const Listing=mongoose.model('Listing',listingSchema);
-module.exports=Listing;
+module.exports=Listing;           //exporting the listing model
