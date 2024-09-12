@@ -19,9 +19,9 @@ router.get('/login',userController.loginRender);
 
 //login verification through passport
 router.post('/login',
-    saveredirecturl,
-    passport.authenticate('local',{failureRedirect: '/login' , failureFlash:true , failureMessage: true}),
-    userController.loginVerify
+    saveredirecturl,                 //middleware to save the original requested URL
+    passport.authenticate('local',{failureRedirect: '/login' , failureFlash:true , failureMessage: true}),   //mechanism to authenticate the user based on local strategy i.e involves basically the verification of the username and the password
+    userController.loginVerify            //what has to done after the authentication is successful redirecting to the intended page etc.
 );
 
 //logout
