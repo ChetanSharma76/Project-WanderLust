@@ -16,7 +16,7 @@ router.route('/')
 .post(validListing , isLoggedin , wrapAsync(listingController.createnewlisting));
 
 //New Route
-router.get('/new',isLoggedin,listingController.newroute);
+router.get('/new',isLoggedin,listingController.newroute);         //displaying form for the new listing
 
 router.route('/:id')
 
